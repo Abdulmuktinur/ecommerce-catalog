@@ -3,7 +3,7 @@
 Project ini dibuat untuk menyelesaikan program Project-Based Virtual Intern : Front End Developer Core Initiative x Rakamin Academy.
 
 ## Soal 
-Pada task terakhir VIX Front End Core Initiative ini, kalian diberikan tugas untuk membentuk sebuah interface dari sebuah website Ecommerce. Kalian ditugaskan untuk membuat dua halaman yaitu men’s clothing dan women’s clothing. Pada task ini, kalian akan bekerja dengan tim UI UX dan juga tim Backend, sehingga website yang akan kalian bangun telah memiliki komponen design juga code API nya.
+Pada task terakhir VIX Front End Core Initiative diberikan tugas untuk membentuk sebuah interface dari sebuah website Ecommerce. Ditugaskan untuk membuat dua halaman yaitu men’s clothing dan women’s clothing. Pada task ini, akan bekerja dengan tim UI UX dan juga tim Backend, sehingga website yang akan kalian bangun telah memiliki komponen design juga code API nya.
 
 ## Tugas
 Tugas kalian adalah membentuk tampilan website, dengan ketentuan :
