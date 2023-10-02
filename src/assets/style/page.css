@@ -79,22 +79,75 @@
   height: 100%;
 }
 
-.load-text-details,
 .load-thumbnail {
   width: 100%;
-  background-color: var(--gray);
+  background-color: var(--blue);
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .load-text-details {
-  height: 70%;
+  height: 75%;
+}
+
+.load-text-title {
+  width: 100%;
+  background-color: var(--blue);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  height: 20%;
+}
+
+.load-text-sub-title {
+  height: 10%;
+  margin-top: 16px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.load-category {
+  width: 25%;
+  background-color: var(--blue);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.load-rating {
+  width: 25%;
+  background-color: var(--blue);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.load-text-description {
+  width: 100%;
+  background-color: var(--blue);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  height: 45%;
+  margin-top: 16px;
 }
 
 .load-details-action {
   width: 100%;
-  height: 25%;
+  height: 20%;
   margin-top: 24px;
-  background-color: var(--gray);
+}
+
+.load-price {
+  width: 30%;
+  height: 35%;
+  margin-top: 16px;
+  background-color: var(--blue);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.load-cta {
+  height: 48%;
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.load-cta-buy, .load-cta-next {
+  width: 30%;
+  background-color: var(--blue);
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
