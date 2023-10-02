@@ -1,26 +1,34 @@
 <template>
-  <div class="container">
+  <div class="container bg-netral">
     <div v-if="isLoading" class="card">
-      <div class="product-container load">
-        <div class="load-thumbnail"></div>
+      <div v-if="!isProductAvailable" class="product-unavailable-container">
+          <div class="product-text">
+            <div class="cta">
+              <div class="loader"></div>
+            </div>
+          </div>
+      </div>
+      <div v-else class="product-container load">
+        <div class="load-thumbnail bg-load"></div>
         <div class="load-details">
           <div class="load-text-details">
-            <div class="load-text-title"></div>
-            <div class="load-text-sub-title">
-              <div class="load-category"></div>
-              <div class="load-rating"></div>
+            <div class="load-text-title bg-load"></div>
+            <div class="load-text-sub-title bg-load">
+              <div class="load-category bg-load"></div>
+              <div class="load-rating bg-load"></div>
             </div>
-            <div class="load-text-description"></div>
+            <div class="load-text-description bg-load"></div>
           </div>
           <div class="load-details-action">
-            <div class="load-price"></div>
+            <div class="load-price bg-load"></div>
             <div class="load-cta">
-              <div class="load-cta-buy"></div>
-              <div class="load-cta-next"></div>
+              <div class="load-cta-buy bg-load"></div>
+              <div class="load-cta-next bg-load"></div>
             </div>
           </div>
         </div>
       </div>
+      
     </div>
     <div
       v-else
@@ -31,7 +39,8 @@
           products.data && products.data.category === 'men\'s clothing',
         'bg-women-color':
           products.data && products.data.category === 'women\'s clothing',
-      }">
+      }"
+    >
       <div class="overlay">
         <img src="../assets/images/bg-shape.svg" alt="bg-image" />
       </div>

@@ -11,7 +11,7 @@
   --blue: #d6e6ff;
   --magenta: #720060;
   --pink: #fde2ff;
-  --netral: #3f3f3f;
+  --netral: #ebebeb;
   --black: #1e1e1e;
   --white: #ffffff;
   --gray: #dcdcdc;
@@ -24,6 +24,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.bg-load{
+background-color: var(--gray);
+}
+
+.bg-netral{
+  background: linear-gradient(180deg, var(--netral) 65%, var(--white) 50%);
 }
 
 .bg-men-color {
@@ -81,7 +89,7 @@
 
 .load-thumbnail {
   width: 100%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -91,7 +99,7 @@
 
 .load-text-title {
   width: 100%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   height: 20%;
 }
@@ -106,19 +114,19 @@
 
 .load-category {
   width: 25%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .load-rating {
   width: 25%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .load-text-description {
   width: 100%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   height: 45%;
   margin-top: 16px;
@@ -134,7 +142,7 @@
   width: 30%;
   height: 35%;
   margin-top: 16px;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -147,7 +155,7 @@
 
 .load-cta-buy, .load-cta-next {
   width: 30%;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
@@ -207,7 +215,7 @@
   justify-content: space-between;
   padding-top: 14px;
   font-size: 16px;
-  color: var(--netral);
+  color: var(--black);
   padding-bottom: 16px;
   border-bottom: 1px solid var(--gray);
 }
@@ -314,4 +322,27 @@
   50% {
     opacity: 0.3;
   }
+}
+
+/* load unvailable */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid var(--gray);
+  border-bottom: 16px solid var(--gray);
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
