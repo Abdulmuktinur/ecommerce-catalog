@@ -4,8 +4,21 @@
       <div class="product-container load">
         <div class="load-thumbnail"></div>
         <div class="load-details">
-          <div class="load-text-details"></div>
-          <div class="load-details-action"></div>
+          <div class="load-text-details">
+            <div class="load-text-title"></div>
+            <div class="load-text-sub-title">
+              <div class="load-category"></div>
+              <div class="load-rating"></div>
+            </div>
+            <div class="load-text-description"></div>
+          </div>
+          <div class="load-details-action">
+            <div class="load-price"></div>
+            <div class="load-cta">
+              <div class="load-cta-buy"></div>
+              <div class="load-cta-next"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -18,8 +31,7 @@
           products.data && products.data.category === 'men\'s clothing',
         'bg-women-color':
           products.data && products.data.category === 'women\'s clothing',
-      }"
-    >
+      }">
       <div class="overlay">
         <img src="../assets/images/bg-shape.svg" alt="bg-image" />
       </div>
